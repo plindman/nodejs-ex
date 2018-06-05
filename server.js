@@ -105,6 +105,7 @@ app.get('/pagecount', function (req, res) {
 });
 
 app.get('/log', function (req, res) {
+  res.type('json');
   res.send('{ logged: 1 }');
 });
 
