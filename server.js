@@ -104,6 +104,10 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+app.get('/log', function (req, res) {
+  res.send('{ logged: 1 }');
+});
+
 // error handling
 app.use(function(err, req, res, next){
   console.error(err.stack);
